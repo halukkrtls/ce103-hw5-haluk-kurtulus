@@ -1,0 +1,77 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Namespace List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Data Structure Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Data Structures}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Namespace Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}ce103\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hw5\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}snake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app Namespace Reference}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}ce103\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hw5\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}snake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dll Namespace Reference}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}ce103\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hw5\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}snake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}test Namespace Reference}{7}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Data Structure Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}ce103\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hw5\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}snake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dll.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Class1 Class Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Member Function Documentation}{10}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}checkKeysPressed()}{10}{subsubsection.5.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.2}collisionDetection()}{11}{subsubsection.5.1.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.1.3}collisionSnake()}{11}{subsubsection.5.1.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.1.4}controls()}{12}{subsubsection.5.1.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.1.5}eatFood()}{12}{subsubsection.5.1.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.1.6}exitYN()}{13}{subsubsection.5.1.1.6}%
+\contentsline {subsubsection}{\numberline {5.1.1.7}gameOverScreen()}{13}{subsubsection.5.1.1.7}%
+\contentsline {subsubsection}{\numberline {5.1.1.8}generateFood()}{14}{subsubsection.5.1.1.8}%
+\contentsline {subsubsection}{\numberline {5.1.1.9}getGameSpeed()}{15}{subsubsection.5.1.1.9}%
+\contentsline {subsubsection}{\numberline {5.1.1.10}loadEnviroment()}{15}{subsubsection.5.1.1.10}%
+\contentsline {subsubsection}{\numberline {5.1.1.11}loadGame()}{15}{subsubsection.5.1.1.11}%
+\contentsline {subsubsection}{\numberline {5.1.1.12}loadSnake()}{16}{subsubsection.5.1.1.12}%
+\contentsline {subsubsection}{\numberline {5.1.1.13}main()}{17}{subsubsection.5.1.1.13}%
+\contentsline {subsubsection}{\numberline {5.1.1.14}mainMenu()}{17}{subsubsection.5.1.1.14}%
+\contentsline {subsubsection}{\numberline {5.1.1.15}menuSelector()}{18}{subsubsection.5.1.1.15}%
+\contentsline {subsubsection}{\numberline {5.1.1.16}move()}{18}{subsubsection.5.1.1.16}%
+\contentsline {subsubsection}{\numberline {5.1.1.17}MoveSnakeArray()}{19}{subsubsection.5.1.1.17}%
+\contentsline {subsubsection}{\numberline {5.1.1.18}pauseMenu()}{19}{subsubsection.5.1.1.18}%
+\contentsline {subsubsection}{\numberline {5.1.1.19}prepairSnakeArray()}{20}{subsubsection.5.1.1.19}%
+\contentsline {subsubsection}{\numberline {5.1.1.20}refreshInfoBar()}{20}{subsubsection.5.1.1.20}%
+\contentsline {subsubsection}{\numberline {5.1.1.21}startGame()}{20}{subsubsection.5.1.1.21}%
+\contentsline {subsubsection}{\numberline {5.1.1.22}waitForAnyKey()}{21}{subsubsection.5.1.1.22}%
+\contentsline {subsubsection}{\numberline {5.1.1.23}welcomeArt()}{22}{subsubsection.5.1.1.23}%
+\contentsline {subsubsection}{\numberline {5.1.1.24}youWinScreen()}{22}{subsubsection.5.1.1.24}%
+\contentsline {subsection}{\numberline {5.1.2}Field Documentation}{23}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}BLANK}{23}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}DOWN\_ARROW}{23}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}ENTER\_KEY}{23}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}EXIT\_BUTTON}{23}{subsubsection.5.1.2.4}%
+\contentsline {subsubsection}{\numberline {5.1.2.5}FOOD}{23}{subsubsection.5.1.2.5}%
+\contentsline {subsubsection}{\numberline {5.1.2.6}LEFT\_ARROW}{24}{subsubsection.5.1.2.6}%
+\contentsline {subsubsection}{\numberline {5.1.2.7}PAUSE\_BUTTON}{24}{subsubsection.5.1.2.7}%
+\contentsline {subsubsection}{\numberline {5.1.2.8}RIGHT\_ARROW}{24}{subsubsection.5.1.2.8}%
+\contentsline {subsubsection}{\numberline {5.1.2.9}SNAKE\_ARRAY\_SIZE}{24}{subsubsection.5.1.2.9}%
+\contentsline {subsubsection}{\numberline {5.1.2.10}SNAKE\_BODY}{24}{subsubsection.5.1.2.10}%
+\contentsline {subsubsection}{\numberline {5.1.2.11}SNAKE\_HEAD}{24}{subsubsection.5.1.2.11}%
+\contentsline {subsubsection}{\numberline {5.1.2.12}UP\_ARROW}{25}{subsubsection.5.1.2.12}%
+\contentsline {subsubsection}{\numberline {5.1.2.13}WALL}{25}{subsubsection.5.1.2.13}%
+\contentsline {section}{\numberline {5.2}ce103\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hw5\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}snake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Program Class Reference}{25}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Member Function Documentation}{25}{subsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.1}Main()}{25}{subsubsection.5.2.1.1}%
+\contentsline {section}{\numberline {5.3}ce103\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}hw5\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}snake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Test1 Class Reference}{26}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Member Function Documentation}{26}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}collisionDetection\_test\_1()}{26}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}collisionDetection\_test\_2()}{26}{subsubsection.5.3.1.2}%
+\contentsline {subsubsection}{\numberline {5.3.1.3}collisionDetection\_test\_3()}{27}{subsubsection.5.3.1.3}%
+\contentsline {subsubsection}{\numberline {5.3.1.4}collisionSnake\_test\_1()}{27}{subsubsection.5.3.1.4}%
+\contentsline {subsubsection}{\numberline {5.3.1.5}collisionSnake\_test\_2()}{27}{subsubsection.5.3.1.5}%
+\contentsline {subsubsection}{\numberline {5.3.1.6}collisionSnake\_test\_3()}{28}{subsubsection.5.3.1.6}%
+\contentsline {subsubsection}{\numberline {5.3.1.7}Eatfood\_test\_1()}{28}{subsubsection.5.3.1.7}%
+\contentsline {subsubsection}{\numberline {5.3.1.8}Eatfood\_test\_2()}{28}{subsubsection.5.3.1.8}%
+\contentsline {subsubsection}{\numberline {5.3.1.9}Eatfood\_test\_3()}{29}{subsubsection.5.3.1.9}%
+\contentsline {chapter}{\numberline {6}File Documentation}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/app/obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/.NETFramework,Version=v4.7.2.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{31}{section.6.1}%
+\contentsline {section}{\numberline {6.2}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/dll/obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/.NETFramework,Version=v4.7.2.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{31}{section.6.2}%
+\contentsline {section}{\numberline {6.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/test/obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/.NETFramework,Version=v4.7.2.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{31}{section.6.3}%
+\contentsline {section}{\numberline {6.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/app/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Program.cs File Reference}{31}{section.6.4}%
+\contentsline {section}{\numberline {6.5}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/app/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Properties/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.cs File Reference}{32}{section.6.5}%
+\contentsline {section}{\numberline {6.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/dll/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Properties/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.cs File Reference}{32}{section.6.6}%
+\contentsline {section}{\numberline {6.7}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/test/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Properties/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.cs File Reference}{32}{section.6.7}%
+\contentsline {section}{\numberline {6.8}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/dll/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Class1.cs File Reference}{32}{section.6.8}%
+\contentsline {section}{\numberline {6.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ramazan Serhat UYGUN/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/b/ce103-\/hw5-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Haluk-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}KURTULUS/ce103-\/hw5-\/snake-\/test/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Test1.cs File Reference}{32}{section.6.9}%
+\contentsline {chapter}{Index}{33}{section*.62}%

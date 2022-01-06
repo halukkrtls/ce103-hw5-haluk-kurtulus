@@ -1,0 +1,843 @@
+\hypertarget{a00049}{}\doxysection{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1 Class Reference}
+\label{a00049}\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Console\+Key \mbox{\hyperlink{a00049_a75471862cf9ce7eadaa220273eae32bc}{wait\+For\+Any\+Key}} ()
+\item 
+int \mbox{\hyperlink{a00049_a5c1a9f0d6092f2ab00a8f6aefa770fba}{get\+Game\+Speed}} ()
+\item 
+void \mbox{\hyperlink{a00049_aff195689d111b585591b6b6844dbd372}{pause\+Menu}} ()
+\item 
+Console\+Key \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{check\+Keys\+Pressed}} (Console\+Key drct)
+\item 
+bool \mbox{\hyperlink{a00049_adf9d95a4a4a5a62decf21a45c0afdca5}{collision\+Snake}} (int x, int y, int\mbox{[},\mbox{]} snkyx, int snktll, int dcttt)
+\item 
+void \mbox{\hyperlink{a00049_a2207e9c77c9019343d91abec1ef3a4a5}{generate\+Food}} (int\mbox{[}$\,$\mbox{]} yummuyxy, int wtdh, int hvyy, int\mbox{[},\mbox{]} snkyx, int snktll)
+\item 
+void \mbox{\hyperlink{a00049_a518fadb20c09258c079296941f97663a}{Move\+Snake\+Array}} (int\mbox{[},\mbox{]} snkxy, int snktll, Console\+Key dcttt)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Move Snake Body (move)}\par
+{\em Move snake body
+
+Moving snake body
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em snake\+XY} & \mbox{[}{\bfseries{int}}\mbox{[},\mbox{]}\mbox{]} snake coordinates\\
+\hline
+\mbox{\texttt{ in}}  & {\em snake\+Length} & \mbox{[}{\bfseries{int}}\mbox{]} index of fibonacci number in the serie\\
+\hline
+\mbox{\texttt{ in}}  & {\em direction} & \mbox{[}{\bfseries{Console\+Key}}\mbox{]} index of fibonacci number in the serie \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{a00049_a46b7515eba688bc1286aa8429a5a3985}{move}} (int\mbox{[},\mbox{]} snkyx, int snktll, Console\+Key dcttt)
+\item 
+bool \mbox{\hyperlink{a00049_a85f226af4e686fd26bff846f4978a9df}{eat\+Food}} (int\mbox{[},\mbox{]} snkyx, int\mbox{[}$\,$\mbox{]} yummyxy)
+\item 
+bool \mbox{\hyperlink{a00049_a3b27c9d4e6d26208928f999b70a5f80f}{collision\+Detection}} (int\mbox{[},\mbox{]} snkyx, int cnswtdh, int cnstll, int snklng)
+\item 
+void \mbox{\hyperlink{a00049_a637515d7fda0a6a18d724a10bd1207cc}{refresh\+Info\+Bar}} (int scr, int spd)
+\item 
+void \mbox{\hyperlink{a00049_aca109a5aa4f94363f513078ec12bb9d5}{you\+Win\+Screen}} ()
+\item 
+void \mbox{\hyperlink{a00049_ae31c93e368ca652c25c8d0dc2bc58744}{game\+Over\+Screen}} ()
+\item 
+void \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{start\+Game}} (int\mbox{[},\mbox{]} snkyx, int\mbox{[}$\,$\mbox{]} yummyxy, int cnswtdh, int cnsltll, int snktall, Console\+Key dcttt, int scr, int fst)
+\item 
+void \mbox{\hyperlink{a00049_a5fe14e3c344496c95a97a04b8b20a30b}{load\+Enviroment}} (int cnlwtdh, int cnstll)
+\item 
+void \mbox{\hyperlink{a00049_aeef7695d5e7aed10e947f0370e2a23a2}{load\+Snake}} (int\mbox{[},\mbox{]} snkyx, int snkhvy)
+\item 
+void \mbox{\hyperlink{a00049_a7a6b6b7dcfedd08dcd656e9ada0280e5}{prepair\+Snake\+Array}} (int\mbox{[},\mbox{]} snkyx, int snkhvy)
+\item 
+void \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{load\+Game}} ()
+\item 
+int \mbox{\hyperlink{a00049_ae7476a450cdf8a67bf60c7d282cb3d52}{menu\+Selector}} (int x, int y, int letsgo)
+\item 
+void \mbox{\hyperlink{a00049_a865fe7a628bbc7ab78cafd00a8f2b4ad}{welcome\+Art}} ()
+\item 
+void \mbox{\hyperlink{a00049_a02ff1cc59e436cf4144225d020f980c8}{controls}} ()
+\item 
+void \mbox{\hyperlink{a00049_a6ee411bf3ab695d2e525e1a2852160a9}{exit\+YN}} ()
+\item 
+int \mbox{\hyperlink{a00049_a46379c5bc52b54e0e0fbcd0182320aeb}{main\+Menu}} ()
+\item 
+int \mbox{\hyperlink{a00049_a6ffafc22a06edc44f83bbd4248c3225e}{main}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{a00049_a3bace856a27599e4dbd1d6b582a14965}{SNAKE\+\_\+\+ARRAY\+\_\+\+SIZE}} = 310
+\item 
+const Console\+Key \mbox{\hyperlink{a00049_ae6d2cbe96e7d4b80dde625b33d8e56f8}{UP\+\_\+\+ARROW}} = Console\+Key.\+Up\+Arrow
+\item 
+const Console\+Key \mbox{\hyperlink{a00049_a42f30d97946c1c2c32b20c646006b569}{LEFT\+\_\+\+ARROW}} = Console\+Key.\+Left\+Arrow
+\item 
+const Console\+Key \mbox{\hyperlink{a00049_a5806b5a7ea6d08a03154f4d43421e261}{RIGHT\+\_\+\+ARROW}} = Console\+Key.\+Right\+Arrow
+\item 
+const Console\+Key \mbox{\hyperlink{a00049_abcf50d317b83ae8d5f2aa5e838518076}{DOWN\+\_\+\+ARROW}} = Console\+Key.\+Down\+Arrow
+\item 
+const Console\+Key \mbox{\hyperlink{a00049_a541143ffaf637e788440fafe0c3c035c}{ENTER\+\_\+\+KEY}} = Console\+Key.\+Enter
+\item 
+const Console\+Key \mbox{\hyperlink{a00049_aa079b64a6ee6000105380987abc4fe7b}{EXIT\+\_\+\+BUTTON}} = Console\+Key.\+Escape
+\item 
+const Console\+Key \mbox{\hyperlink{a00049_ae25237fdd05617b1e414d6f800593f2c}{PAUSE\+\_\+\+BUTTON}} = Console\+Key.\+P
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char \mbox{\hyperlink{a00049_a3a481a86d7d9e51dcd536b03e80d97de}{SNAKE\+\_\+\+HEAD}} = (char)177
+\item 
+const char \mbox{\hyperlink{a00049_ab0c1bbab35a74fb239fc43f03a0946af}{SNAKE\+\_\+\+BODY}} = (char)178
+\item 
+const char \mbox{\hyperlink{a00049_aae2db71f1db944b6a4a021e68f1ea89c}{WALL}} = (char)219
+\item 
+const char \mbox{\hyperlink{a00049_a09cfc1fa2c68f29eb57cc7fdd98e02ba}{FOOD}} = (char)254
+\item 
+const char \mbox{\hyperlink{a00049_a84bf3b2f0f3a3dba90b2fe3f2cf13633}{BLANK}} = \textquotesingle{} \textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00049_a075c315622a55de368868c92a702eec4}\label{a00049_a075c315622a55de368868c92a702eec4}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!checkKeysPressed@{checkKeysPressed}}
+\index{checkKeysPressed@{checkKeysPressed}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{checkKeysPressed()}{checkKeysPressed()}}
+{\footnotesize\ttfamily Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed (\begin{DoxyParamCaption}\item[{Console\+Key}]{drct }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_abcf50d317b83ae8d5f2aa5e838518076}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+DOWN\+\_\+\+ARROW}}, \mbox{\hyperlink{a00049_aa079b64a6ee6000105380987abc4fe7b}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+EXIT\+\_\+\+BUTTON}}, \mbox{\hyperlink{a00049_a42f30d97946c1c2c32b20c646006b569}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+LEFT\+\_\+\+ARROW}}, \mbox{\hyperlink{a00049_ae25237fdd05617b1e414d6f800593f2c}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+PAUSE\+\_\+\+BUTTON}}, \mbox{\hyperlink{a00049_aff195689d111b585591b6b6844dbd372}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+pause\+Menu()}}, \mbox{\hyperlink{a00049_a5806b5a7ea6d08a03154f4d43421e261}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+RIGHT\+\_\+\+ARROW}}, and \mbox{\hyperlink{a00049_ae6d2cbe96e7d4b80dde625b33d8e56f8}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+UP\+\_\+\+ARROW}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a075c315622a55de368868c92a702eec4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a075c315622a55de368868c92a702eec4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a3b27c9d4e6d26208928f999b70a5f80f}\label{a00049_a3b27c9d4e6d26208928f999b70a5f80f}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!collisionDetection@{collisionDetection}}
+\index{collisionDetection@{collisionDetection}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{collisionDetection()}{collisionDetection()}}
+{\footnotesize\ttfamily bool ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+collision\+Detection (\begin{DoxyParamCaption}\item[{int}]{snkyx\mbox{[},\mbox{]},  }\item[{int}]{cnswtdh,  }\item[{int}]{cnstll,  }\item[{int}]{snklng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_adf9d95a4a4a5a62decf21a45c0afdca5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+collision\+Snake()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00053_a69f1183064451e3df46b2cd71e86b73c}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+collision\+Detection\+\_\+test\+\_\+1()}}, \mbox{\hyperlink{a00053_a1d6f4b42c3cba2505f63b63548a958e9}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+collision\+Detection\+\_\+test\+\_\+2()}}, \mbox{\hyperlink{a00053_a04787823840ad6f2f2a24e9344cd1ca1}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+collision\+Detection\+\_\+test\+\_\+3()}}, \mbox{\hyperlink{a00053_afc17a1da34fbf8d305f49bfc7e978f67}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+collision\+Snake\+\_\+test\+\_\+1()}}, \mbox{\hyperlink{a00053_a642fff56c652e36ca3440a007f512395}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+collision\+Snake\+\_\+test\+\_\+2()}}, \mbox{\hyperlink{a00053_a82cbc5fd1fa723ff76365d7cfb53a6ea}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+collision\+Snake\+\_\+test\+\_\+3()}}, and \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a3b27c9d4e6d26208928f999b70a5f80f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a3b27c9d4e6d26208928f999b70a5f80f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_adf9d95a4a4a5a62decf21a45c0afdca5}\label{a00049_adf9d95a4a4a5a62decf21a45c0afdca5}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!collisionSnake@{collisionSnake}}
+\index{collisionSnake@{collisionSnake}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{collisionSnake()}{collisionSnake()}}
+{\footnotesize\ttfamily bool ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+collision\+Snake (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{snkyx\mbox{[},\mbox{]},  }\item[{int}]{snktll,  }\item[{int}]{dcttt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a3b27c9d4e6d26208928f999b70a5f80f}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+collision\+Detection()}}, and \mbox{\hyperlink{a00049_a2207e9c77c9019343d91abec1ef3a4a5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+generate\+Food()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_adf9d95a4a4a5a62decf21a45c0afdca5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a02ff1cc59e436cf4144225d020f980c8}\label{a00049_a02ff1cc59e436cf4144225d020f980c8}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!controls@{controls}}
+\index{controls@{controls}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{controls()}{controls()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+controls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a6ffafc22a06edc44f83bbd4248c3225e}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main()}}, and \mbox{\hyperlink{a00045_a3781960913402c8b5f04c0af2a67e18d}{ce103\+\_\+hw5\+\_\+snake\+\_\+app.\+Program.\+Main()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a02ff1cc59e436cf4144225d020f980c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a85f226af4e686fd26bff846f4978a9df}\label{a00049_a85f226af4e686fd26bff846f4978a9df}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!eatFood@{eatFood}}
+\index{eatFood@{eatFood}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{eatFood()}{eatFood()}}
+{\footnotesize\ttfamily bool ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+eat\+Food (\begin{DoxyParamCaption}\item[{int}]{snkyx\mbox{[},\mbox{]},  }\item[{int\mbox{[}$\,$\mbox{]}}]{yummyxy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00053_a22bc12b925fd524bc2100eb06ea04fa9}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+Eatfood\+\_\+test\+\_\+1()}}, \mbox{\hyperlink{a00053_a894987caf663a22cfa2fa3a096d0de1d}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+Eatfood\+\_\+test\+\_\+2()}}, \mbox{\hyperlink{a00053_a6bedf1db28e78fc221f3c09535e0feaf}{ce103\+\_\+hw5\+\_\+snake\+\_\+test.\+Unit\+Test1.\+Eatfood\+\_\+test\+\_\+3()}}, and \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a85f226af4e686fd26bff846f4978a9df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a6ee411bf3ab695d2e525e1a2852160a9}\label{a00049_a6ee411bf3ab695d2e525e1a2852160a9}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!exitYN@{exitYN}}
+\index{exitYN@{exitYN}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{exitYN()}{exitYN()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+exit\+YN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a75471862cf9ce7eadaa220273eae32bc}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+wait\+For\+Any\+Key()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a6ffafc22a06edc44f83bbd4248c3225e}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main()}}, and \mbox{\hyperlink{a00045_a3781960913402c8b5f04c0af2a67e18d}{ce103\+\_\+hw5\+\_\+snake\+\_\+app.\+Program.\+Main()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a6ee411bf3ab695d2e525e1a2852160a9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a6ee411bf3ab695d2e525e1a2852160a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_ae31c93e368ca652c25c8d0dc2bc58744}\label{a00049_ae31c93e368ca652c25c8d0dc2bc58744}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!gameOverScreen@{gameOverScreen}}
+\index{gameOverScreen@{gameOverScreen}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{gameOverScreen()}{gameOverScreen()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+game\+Over\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a75471862cf9ce7eadaa220273eae32bc}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+wait\+For\+Any\+Key()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_ae31c93e368ca652c25c8d0dc2bc58744_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_ae31c93e368ca652c25c8d0dc2bc58744_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a2207e9c77c9019343d91abec1ef3a4a5}\label{a00049_a2207e9c77c9019343d91abec1ef3a4a5}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!generateFood@{generateFood}}
+\index{generateFood@{generateFood}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{generateFood()}{generateFood()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+generate\+Food (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{yummuyxy,  }\item[{int}]{wtdh,  }\item[{int}]{hvyy,  }\item[{int}]{snkyx\mbox{[},\mbox{]},  }\item[{int}]{snktll }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_adf9d95a4a4a5a62decf21a45c0afdca5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+collision\+Snake()}}, and \mbox{\hyperlink{a00049_a09cfc1fa2c68f29eb57cc7fdd98e02ba}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+FOOD}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}, and \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a2207e9c77c9019343d91abec1ef3a4a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a2207e9c77c9019343d91abec1ef3a4a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a5c1a9f0d6092f2ab00a8f6aefa770fba}\label{a00049_a5c1a9f0d6092f2ab00a8f6aefa770fba}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!getGameSpeed@{getGameSpeed}}
+\index{getGameSpeed@{getGameSpeed}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{getGameSpeed()}{getGameSpeed()}}
+{\footnotesize\ttfamily int ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+get\+Game\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a5c1a9f0d6092f2ab00a8f6aefa770fba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a5fe14e3c344496c95a97a04b8b20a30b}\label{a00049_a5fe14e3c344496c95a97a04b8b20a30b}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!loadEnviroment@{loadEnviroment}}
+\index{loadEnviroment@{loadEnviroment}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{loadEnviroment()}{loadEnviroment()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Enviroment (\begin{DoxyParamCaption}\item[{int}]{cnlwtdh,  }\item[{int}]{cnstll }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_aae2db71f1db944b6a4a021e68f1ea89c}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+WALL}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a5fe14e3c344496c95a97a04b8b20a30b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}\label{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!loadGame@{loadGame}}
+\index{loadGame@{loadGame}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{loadGame()}{loadGame()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a2207e9c77c9019343d91abec1ef3a4a5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+generate\+Food()}}, \mbox{\hyperlink{a00049_a5c1a9f0d6092f2ab00a8f6aefa770fba}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+get\+Game\+Speed()}}, \mbox{\hyperlink{a00049_a5fe14e3c344496c95a97a04b8b20a30b}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Enviroment()}}, \mbox{\hyperlink{a00049_aeef7695d5e7aed10e947f0370e2a23a2}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Snake()}}, \mbox{\hyperlink{a00049_a7a6b6b7dcfedd08dcd656e9ada0280e5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+prepair\+Snake\+Array()}}, \mbox{\hyperlink{a00049_a637515d7fda0a6a18d724a10bd1207cc}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+refresh\+Info\+Bar()}}, \mbox{\hyperlink{a00049_a3bace856a27599e4dbd1d6b582a14965}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+SNAKE\+\_\+\+ARRAY\+\_\+\+SIZE}}, and \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a6ffafc22a06edc44f83bbd4248c3225e}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main()}}, and \mbox{\hyperlink{a00045_a3781960913402c8b5f04c0af2a67e18d}{ce103\+\_\+hw5\+\_\+snake\+\_\+app.\+Program.\+Main()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_ae1ba07842d976d2ca4e3feb68c0f3bde_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_ae1ba07842d976d2ca4e3feb68c0f3bde_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_aeef7695d5e7aed10e947f0370e2a23a2}\label{a00049_aeef7695d5e7aed10e947f0370e2a23a2}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!loadSnake@{loadSnake}}
+\index{loadSnake@{loadSnake}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{loadSnake()}{loadSnake()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Snake (\begin{DoxyParamCaption}\item[{int}]{snkyx\mbox{[},\mbox{]},  }\item[{int}]{snkhvy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_ab0c1bbab35a74fb239fc43f03a0946af}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+SNAKE\+\_\+\+BODY}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_aeef7695d5e7aed10e947f0370e2a23a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a6ffafc22a06edc44f83bbd4248c3225e}\label{a00049_a6ffafc22a06edc44f83bbd4248c3225e}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!main@{main}}
+\index{main@{main}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a02ff1cc59e436cf4144225d020f980c8}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+controls()}}, \mbox{\hyperlink{a00049_a6ee411bf3ab695d2e525e1a2852160a9}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+exit\+YN()}}, \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}, \mbox{\hyperlink{a00049_a46379c5bc52b54e0e0fbcd0182320aeb}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main\+Menu()}}, and \mbox{\hyperlink{a00049_a865fe7a628bbc7ab78cafd00a8f2b4ad}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+welcome\+Art()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a6ffafc22a06edc44f83bbd4248c3225e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a46379c5bc52b54e0e0fbcd0182320aeb}\label{a00049_a46379c5bc52b54e0e0fbcd0182320aeb}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{mainMenu()}{mainMenu()}}
+{\footnotesize\ttfamily int ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_ae7476a450cdf8a67bf60c7d282cb3d52}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+menu\+Selector()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a6ffafc22a06edc44f83bbd4248c3225e}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main()}}, and \mbox{\hyperlink{a00045_a3781960913402c8b5f04c0af2a67e18d}{ce103\+\_\+hw5\+\_\+snake\+\_\+app.\+Program.\+Main()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a46379c5bc52b54e0e0fbcd0182320aeb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a46379c5bc52b54e0e0fbcd0182320aeb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_ae7476a450cdf8a67bf60c7d282cb3d52}\label{a00049_ae7476a450cdf8a67bf60c7d282cb3d52}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!menuSelector@{menuSelector}}
+\index{menuSelector@{menuSelector}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{menuSelector()}{menuSelector()}}
+{\footnotesize\ttfamily int ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+menu\+Selector (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{letsgo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_abcf50d317b83ae8d5f2aa5e838518076}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+DOWN\+\_\+\+ARROW}}, \mbox{\hyperlink{a00049_a541143ffaf637e788440fafe0c3c035c}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+ENTER\+\_\+\+KEY}}, \mbox{\hyperlink{a00049_ae6d2cbe96e7d4b80dde625b33d8e56f8}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+UP\+\_\+\+ARROW}}, and \mbox{\hyperlink{a00049_a75471862cf9ce7eadaa220273eae32bc}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+wait\+For\+Any\+Key()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a46379c5bc52b54e0e0fbcd0182320aeb}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main\+Menu()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_ae7476a450cdf8a67bf60c7d282cb3d52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_ae7476a450cdf8a67bf60c7d282cb3d52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a46b7515eba688bc1286aa8429a5a3985}\label{a00049_a46b7515eba688bc1286aa8429a5a3985}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!move@{move}}
+\index{move@{move}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+move (\begin{DoxyParamCaption}\item[{int}]{snkyx\mbox{[},\mbox{]},  }\item[{int}]{snktll,  }\item[{Console\+Key}]{dcttt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a84bf3b2f0f3a3dba90b2fe3f2cf13633}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+BLANK}}, \mbox{\hyperlink{a00049_a518fadb20c09258c079296941f97663a}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+Move\+Snake\+Array()}}, \mbox{\hyperlink{a00049_ab0c1bbab35a74fb239fc43f03a0946af}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+SNAKE\+\_\+\+BODY}}, and \mbox{\hyperlink{a00049_a3a481a86d7d9e51dcd536b03e80d97de}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+SNAKE\+\_\+\+HEAD}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a46b7515eba688bc1286aa8429a5a3985_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a46b7515eba688bc1286aa8429a5a3985_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a518fadb20c09258c079296941f97663a}\label{a00049_a518fadb20c09258c079296941f97663a}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!MoveSnakeArray@{MoveSnakeArray}}
+\index{MoveSnakeArray@{MoveSnakeArray}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{MoveSnakeArray()}{MoveSnakeArray()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+Move\+Snake\+Array (\begin{DoxyParamCaption}\item[{int}]{snkxy\mbox{[},\mbox{]},  }\item[{int}]{snktll,  }\item[{Console\+Key}]{dcttt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_abcf50d317b83ae8d5f2aa5e838518076}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+DOWN\+\_\+\+ARROW}}, \mbox{\hyperlink{a00049_a42f30d97946c1c2c32b20c646006b569}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+LEFT\+\_\+\+ARROW}}, \mbox{\hyperlink{a00049_a5806b5a7ea6d08a03154f4d43421e261}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+RIGHT\+\_\+\+ARROW}}, and \mbox{\hyperlink{a00049_ae6d2cbe96e7d4b80dde625b33d8e56f8}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+UP\+\_\+\+ARROW}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a46b7515eba688bc1286aa8429a5a3985}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+move()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a518fadb20c09258c079296941f97663a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_aff195689d111b585591b6b6844dbd372}\label{a00049_aff195689d111b585591b6b6844dbd372}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!pauseMenu@{pauseMenu}}
+\index{pauseMenu@{pauseMenu}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{pauseMenu()}{pauseMenu()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+pause\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a75471862cf9ce7eadaa220273eae32bc}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+wait\+For\+Any\+Key()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_aff195689d111b585591b6b6844dbd372_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_aff195689d111b585591b6b6844dbd372_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a7a6b6b7dcfedd08dcd656e9ada0280e5}\label{a00049_a7a6b6b7dcfedd08dcd656e9ada0280e5}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!prepairSnakeArray@{prepairSnakeArray}}
+\index{prepairSnakeArray@{prepairSnakeArray}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{prepairSnakeArray()}{prepairSnakeArray()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+prepair\+Snake\+Array (\begin{DoxyParamCaption}\item[{int}]{snkyx\mbox{[},\mbox{]},  }\item[{int}]{snkhvy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a7a6b6b7dcfedd08dcd656e9ada0280e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a637515d7fda0a6a18d724a10bd1207cc}\label{a00049_a637515d7fda0a6a18d724a10bd1207cc}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!refreshInfoBar@{refreshInfoBar}}
+\index{refreshInfoBar@{refreshInfoBar}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{refreshInfoBar()}{refreshInfoBar()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+refresh\+Info\+Bar (\begin{DoxyParamCaption}\item[{int}]{scr,  }\item[{int}]{spd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}, and \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a637515d7fda0a6a18d724a10bd1207cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a4bdd3cb699145c8c9adca121b2f59af4}\label{a00049_a4bdd3cb699145c8c9adca121b2f59af4}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!startGame@{startGame}}
+\index{startGame@{startGame}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game (\begin{DoxyParamCaption}\item[{int}]{snkyx\mbox{[},\mbox{]},  }\item[{int\mbox{[}$\,$\mbox{]}}]{yummyxy,  }\item[{int}]{cnswtdh,  }\item[{int}]{cnsltll,  }\item[{int}]{snktall,  }\item[{Console\+Key}]{dcttt,  }\item[{int}]{scr,  }\item[{int}]{fst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed()}}, \mbox{\hyperlink{a00049_a3b27c9d4e6d26208928f999b70a5f80f}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+collision\+Detection()}}, \mbox{\hyperlink{a00049_a85f226af4e686fd26bff846f4978a9df}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+eat\+Food()}}, \mbox{\hyperlink{a00049_ae31c93e368ca652c25c8d0dc2bc58744}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+game\+Over\+Screen()}}, \mbox{\hyperlink{a00049_a2207e9c77c9019343d91abec1ef3a4a5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+generate\+Food()}}, \mbox{\hyperlink{a00049_a46b7515eba688bc1286aa8429a5a3985}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+move()}}, \mbox{\hyperlink{a00049_a637515d7fda0a6a18d724a10bd1207cc}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+refresh\+Info\+Bar()}}, \mbox{\hyperlink{a00049_a3bace856a27599e4dbd1d6b582a14965}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+SNAKE\+\_\+\+ARRAY\+\_\+\+SIZE}}, and \mbox{\hyperlink{a00049_aca109a5aa4f94363f513078ec12bb9d5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+you\+Win\+Screen()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a4bdd3cb699145c8c9adca121b2f59af4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a4bdd3cb699145c8c9adca121b2f59af4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a75471862cf9ce7eadaa220273eae32bc}\label{a00049_a75471862cf9ce7eadaa220273eae32bc}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!waitForAnyKey@{waitForAnyKey}}
+\index{waitForAnyKey@{waitForAnyKey}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{waitForAnyKey()}{waitForAnyKey()}}
+{\footnotesize\ttfamily Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+wait\+For\+Any\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a6ee411bf3ab695d2e525e1a2852160a9}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+exit\+YN()}}, \mbox{\hyperlink{a00049_ae31c93e368ca652c25c8d0dc2bc58744}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+game\+Over\+Screen()}}, \mbox{\hyperlink{a00049_ae7476a450cdf8a67bf60c7d282cb3d52}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+menu\+Selector()}}, \mbox{\hyperlink{a00049_aff195689d111b585591b6b6844dbd372}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+pause\+Menu()}}, \mbox{\hyperlink{a00049_a865fe7a628bbc7ab78cafd00a8f2b4ad}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+welcome\+Art()}}, and \mbox{\hyperlink{a00049_aca109a5aa4f94363f513078ec12bb9d5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+you\+Win\+Screen()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a75471862cf9ce7eadaa220273eae32bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_a865fe7a628bbc7ab78cafd00a8f2b4ad}\label{a00049_a865fe7a628bbc7ab78cafd00a8f2b4ad}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!welcomeArt@{welcomeArt}}
+\index{welcomeArt@{welcomeArt}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{welcomeArt()}{welcomeArt()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+welcome\+Art (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a75471862cf9ce7eadaa220273eae32bc}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+wait\+For\+Any\+Key()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a6ffafc22a06edc44f83bbd4248c3225e}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+main()}}, and \mbox{\hyperlink{a00045_a3781960913402c8b5f04c0af2a67e18d}{ce103\+\_\+hw5\+\_\+snake\+\_\+app.\+Program.\+Main()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a865fe7a628bbc7ab78cafd00a8f2b4ad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_a865fe7a628bbc7ab78cafd00a8f2b4ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00049_aca109a5aa4f94363f513078ec12bb9d5}\label{a00049_aca109a5aa4f94363f513078ec12bb9d5}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!youWinScreen@{youWinScreen}}
+\index{youWinScreen@{youWinScreen}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{youWinScreen()}{youWinScreen()}}
+{\footnotesize\ttfamily void ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+you\+Win\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{a00049_a75471862cf9ce7eadaa220273eae32bc}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+wait\+For\+Any\+Key()}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_aca109a5aa4f94363f513078ec12bb9d5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dee/a00049_aca109a5aa4f94363f513078ec12bb9d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{a00049_a84bf3b2f0f3a3dba90b2fe3f2cf13633}\label{a00049_a84bf3b2f0f3a3dba90b2fe3f2cf13633}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!BLANK@{BLANK}}
+\index{BLANK@{BLANK}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{BLANK}{BLANK}}
+{\footnotesize\ttfamily const char ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+BLANK = \textquotesingle{} \textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a46b7515eba688bc1286aa8429a5a3985}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+move()}}.
+
+\mbox{\Hypertarget{a00049_abcf50d317b83ae8d5f2aa5e838518076}\label{a00049_abcf50d317b83ae8d5f2aa5e838518076}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!DOWN\_ARROW@{DOWN\_ARROW}}
+\index{DOWN\_ARROW@{DOWN\_ARROW}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{DOWN\_ARROW}{DOWN\_ARROW}}
+{\footnotesize\ttfamily const Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+DOWN\+\_\+\+ARROW = Console\+Key.\+Down\+Arrow\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed()}}, \mbox{\hyperlink{a00049_ae7476a450cdf8a67bf60c7d282cb3d52}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+menu\+Selector()}}, and \mbox{\hyperlink{a00049_a518fadb20c09258c079296941f97663a}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+Move\+Snake\+Array()}}.
+
+\mbox{\Hypertarget{a00049_a541143ffaf637e788440fafe0c3c035c}\label{a00049_a541143ffaf637e788440fafe0c3c035c}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!ENTER\_KEY@{ENTER\_KEY}}
+\index{ENTER\_KEY@{ENTER\_KEY}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{ENTER\_KEY}{ENTER\_KEY}}
+{\footnotesize\ttfamily const Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+ENTER\+\_\+\+KEY = Console\+Key.\+Enter\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae7476a450cdf8a67bf60c7d282cb3d52}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+menu\+Selector()}}.
+
+\mbox{\Hypertarget{a00049_aa079b64a6ee6000105380987abc4fe7b}\label{a00049_aa079b64a6ee6000105380987abc4fe7b}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!EXIT\_BUTTON@{EXIT\_BUTTON}}
+\index{EXIT\_BUTTON@{EXIT\_BUTTON}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{EXIT\_BUTTON}{EXIT\_BUTTON}}
+{\footnotesize\ttfamily const Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+EXIT\+\_\+\+BUTTON = Console\+Key.\+Escape\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed()}}.
+
+\mbox{\Hypertarget{a00049_a09cfc1fa2c68f29eb57cc7fdd98e02ba}\label{a00049_a09cfc1fa2c68f29eb57cc7fdd98e02ba}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!FOOD@{FOOD}}
+\index{FOOD@{FOOD}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{FOOD}{FOOD}}
+{\footnotesize\ttfamily const char ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+FOOD = (char)254\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a2207e9c77c9019343d91abec1ef3a4a5}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+generate\+Food()}}.
+
+\mbox{\Hypertarget{a00049_a42f30d97946c1c2c32b20c646006b569}\label{a00049_a42f30d97946c1c2c32b20c646006b569}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!LEFT\_ARROW@{LEFT\_ARROW}}
+\index{LEFT\_ARROW@{LEFT\_ARROW}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{LEFT\_ARROW}{LEFT\_ARROW}}
+{\footnotesize\ttfamily const Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+LEFT\+\_\+\+ARROW = Console\+Key.\+Left\+Arrow\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed()}}, and \mbox{\hyperlink{a00049_a518fadb20c09258c079296941f97663a}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+Move\+Snake\+Array()}}.
+
+\mbox{\Hypertarget{a00049_ae25237fdd05617b1e414d6f800593f2c}\label{a00049_ae25237fdd05617b1e414d6f800593f2c}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!PAUSE\_BUTTON@{PAUSE\_BUTTON}}
+\index{PAUSE\_BUTTON@{PAUSE\_BUTTON}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{PAUSE\_BUTTON}{PAUSE\_BUTTON}}
+{\footnotesize\ttfamily const Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+PAUSE\+\_\+\+BUTTON = Console\+Key.\+P\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed()}}.
+
+\mbox{\Hypertarget{a00049_a5806b5a7ea6d08a03154f4d43421e261}\label{a00049_a5806b5a7ea6d08a03154f4d43421e261}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!RIGHT\_ARROW@{RIGHT\_ARROW}}
+\index{RIGHT\_ARROW@{RIGHT\_ARROW}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_ARROW}{RIGHT\_ARROW}}
+{\footnotesize\ttfamily const Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+RIGHT\+\_\+\+ARROW = Console\+Key.\+Right\+Arrow\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed()}}, and \mbox{\hyperlink{a00049_a518fadb20c09258c079296941f97663a}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+Move\+Snake\+Array()}}.
+
+\mbox{\Hypertarget{a00049_a3bace856a27599e4dbd1d6b582a14965}\label{a00049_a3bace856a27599e4dbd1d6b582a14965}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!SNAKE\_ARRAY\_SIZE@{SNAKE\_ARRAY\_SIZE}}
+\index{SNAKE\_ARRAY\_SIZE@{SNAKE\_ARRAY\_SIZE}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{SNAKE\_ARRAY\_SIZE}{SNAKE\_ARRAY\_SIZE}}
+{\footnotesize\ttfamily const int ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+SNAKE\+\_\+\+ARRAY\+\_\+\+SIZE = 310\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_ae1ba07842d976d2ca4e3feb68c0f3bde}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Game()}}, and \mbox{\hyperlink{a00049_a4bdd3cb699145c8c9adca121b2f59af4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+start\+Game()}}.
+
+\mbox{\Hypertarget{a00049_ab0c1bbab35a74fb239fc43f03a0946af}\label{a00049_ab0c1bbab35a74fb239fc43f03a0946af}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!SNAKE\_BODY@{SNAKE\_BODY}}
+\index{SNAKE\_BODY@{SNAKE\_BODY}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{SNAKE\_BODY}{SNAKE\_BODY}}
+{\footnotesize\ttfamily const char ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+SNAKE\+\_\+\+BODY = (char)178\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_aeef7695d5e7aed10e947f0370e2a23a2}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Snake()}}, and \mbox{\hyperlink{a00049_a46b7515eba688bc1286aa8429a5a3985}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+move()}}.
+
+\mbox{\Hypertarget{a00049_a3a481a86d7d9e51dcd536b03e80d97de}\label{a00049_a3a481a86d7d9e51dcd536b03e80d97de}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!SNAKE\_HEAD@{SNAKE\_HEAD}}
+\index{SNAKE\_HEAD@{SNAKE\_HEAD}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{SNAKE\_HEAD}{SNAKE\_HEAD}}
+{\footnotesize\ttfamily const char ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+SNAKE\+\_\+\+HEAD = (char)177\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a46b7515eba688bc1286aa8429a5a3985}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+move()}}.
+
+\mbox{\Hypertarget{a00049_ae6d2cbe96e7d4b80dde625b33d8e56f8}\label{a00049_ae6d2cbe96e7d4b80dde625b33d8e56f8}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!UP\_ARROW@{UP\_ARROW}}
+\index{UP\_ARROW@{UP\_ARROW}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{UP\_ARROW}{UP\_ARROW}}
+{\footnotesize\ttfamily const Console\+Key ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+UP\+\_\+\+ARROW = Console\+Key.\+Up\+Arrow\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a075c315622a55de368868c92a702eec4}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+check\+Keys\+Pressed()}}, \mbox{\hyperlink{a00049_ae7476a450cdf8a67bf60c7d282cb3d52}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+menu\+Selector()}}, and \mbox{\hyperlink{a00049_a518fadb20c09258c079296941f97663a}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+Move\+Snake\+Array()}}.
+
+\mbox{\Hypertarget{a00049_aae2db71f1db944b6a4a021e68f1ea89c}\label{a00049_aae2db71f1db944b6a4a021e68f1ea89c}} 
+\index{ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}!WALL@{WALL}}
+\index{WALL@{WALL}!ce103\_hw5\_snake\_dll.Class1@{ce103\_hw5\_snake\_dll.Class1}}
+\doxysubsubsection{\texorpdfstring{WALL}{WALL}}
+{\footnotesize\ttfamily const char ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+WALL = (char)219\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Referenced by \mbox{\hyperlink{a00049_a5fe14e3c344496c95a97a04b8b20a30b}{ce103\+\_\+hw5\+\_\+snake\+\_\+dll.\+Class1.\+load\+Enviroment()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ramazan Serhat UYGUN/\+Desktop/b/ce103-\/hw5-\/\+Haluk-\/\+KURTULUS/ce103-\/hw5-\/snake-\/dll/\mbox{\hyperlink{a00023}{Class1.\+cs}}\end{DoxyCompactItemize}

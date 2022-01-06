@@ -1,0 +1,4 @@
+﻿'ce103-hw5-snake-app.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'ce103-hw5-snake-app.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\Users\Ramazan Serhat UYGUN\Desktop\Rsuygun\Ödev-Ders\Uğur Hoca\Homework-5\ce103-hw5-Ramazan-Serhat-UYGUN\ce103-hw5-snake-app\bin\Debug\ce103-hw5-snake-app.exe'. Symbols loaded.
+'ce103-hw5-snake-app.exe' (CLR v4.0.30319: ce103-hw5-snake-app.exe): Loaded 'C:\Users\Ramazan Serhat UYGUN\Desktop\Rsuygun\Ödev-Ders\Uğur Hoca\Homework-5\ce103-hw5-Ramazan-Serhat-UYGUN\ce103-hw5-snake-app\bin\Debug\ce103-hw5-snake-dll.dll'. Symbols loaded.
+The program '[19932] ce103-hw5-snake-app.exe' has exited with code 3221225786 (0xc000013a).
